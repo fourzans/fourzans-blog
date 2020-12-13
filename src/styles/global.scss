@@ -108,7 +108,15 @@ a {
 }
 .hero-header {
   padding: 0 0 64px;
-  max-width: 980px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  .description {
+    width:70%
+  }
+  .avatar {
+    width: 30%;
+  }
 }
 .headline {
   font-size: 36px;
@@ -171,7 +179,7 @@ a {
     margin-bottom: 32px;
     text-align: center;
   }
-  
+
 }
 .post-thumbnail {
   text-align: center;
@@ -298,13 +306,13 @@ a {
   }
 }
 /* Portrait and Landscape */
-@media only screen 
+@media only screen
 and (min-width: 768px) {
 .grids {
   grid-template-columns: 1fr 1fr;
 }
 }
-@media only screen 
+@media only screen
   and (min-width: 1024px) {
   .grids {
     grid-template-columns: 1fr 1fr 1fr;
