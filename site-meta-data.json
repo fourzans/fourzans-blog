@@ -3,7 +3,7 @@
   "siteUrl": "https://marianofourzans.netlify.app/",
   "description": "Typescript, Dotnet, NodeJS, Software Blog",
   "home": {
-    "title": "Hi! I'm Mariano",
-    "description": "I'm a Software Developer in Winnipeg, Canada. I enjoy writing articles about what I learn. In this blog I will teach you how to write efficient, high-performance software."
+    "title": "",
+    "description": "Hi! I'm Mariano. I enjoy writing articles about <span class='highlight'>software development</span>, mostly about <span class='highlight'>MERN</span> and <span class='highlight'>.NET</span>. In this blog I will teach you how to write <span class='highlight'>efficient</span>, <span class='highlight'>high-performance</span> software."
   }
 }

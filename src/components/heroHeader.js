@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticQuery, graphql, Link } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import Avatar from "../images/avatar.png";
 export default () => (
   <StaticQuery
@@ -18,15 +18,13 @@ export default () => (
     render={data => (
       <div className="hero-header">
         <div className="description">
-          <div className="headline">{data.site.siteMetadata.home.title}</div>
           <div
-            className="primary-content"
+            className="headline"
             dangerouslySetInnerHTML={{ __html: data.site.siteMetadata.home.description}}
           />
-          <Link to='/contact' className="button -primary">Get in touch &rarr;</Link>
         </div>
         <div className="avatar">
-          <img src={Avatar} />
+          <img alt="avatar" src={Avatar} />
         </div>
       </div>
     )}
