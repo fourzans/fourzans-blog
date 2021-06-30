@@ -8,7 +8,12 @@ body {
 * {
   margin-top: 0
 }
-body.light {
+
+body {
+  font-family: $font-family;
+  border-top: 10px solid var(--primary-color);
+  background-color: var(--background);
+  color: var(--text-color);
   --primary-color: #381696;
   --primary-text-color: #fff;
   --featured-bg: #493b8a;
@@ -16,6 +21,7 @@ body.light {
   --secondary-color: #10072b;
   --background: #fff;
   --site-header: #000000;
+  --site-footer: #000000;
   --card-bg: #fff;
   --card-bdr: #eee;
   --card-shadow: #d5d5d5;
@@ -32,14 +38,6 @@ body.light {
   --line-three: #86A3C3;
   --line-four: #B6CEC7;
   --line-five: #D8E0BB;
-}
-
-/* System Fonts as used by Medium and WordPress */
-body {
-  font-family: $font-family;
-  border-top: 10px solid var(--primary-color);
-  background-color: var(--background);
-  color: var(--text-color);
 }
 a {
   color: var(--line-two);
@@ -375,12 +373,64 @@ img {
   font-size: 0.8rem;
   color: var(--text-secondary-color);
 }
-.site-footer {
+main {
+  width: 100%;
+  padding-right: 1.45rem;
+  padding-left: 1.45rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  main {
+      max-width: 720px;
+  }
+}
+footer {
   text-align: center;
-  margin: 90px 0 16px;
-  color: #666;
-  a {
-    font-weight: 700;
+  color: var(--line-five);;
+  display: block;
+  h3, p {
+    margin: 0 0 1rem 0;
+    white-space: pre-wrap;
+    text-align: center;
+  }
+  &.contact {
+    text-align: center;
+    color: var(--background);
+    background: var(--site-footer);
+    a {
+      font-weight: 700;
+    }
+    .contact-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      grid-template-rows: auto;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      margin-left: 30rem;
+      margin-right: 30rem;
+      .web {
+        a {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+    @media only screen and (max-width: 850px) {
+      .contact-container {
+        margin-left: 0rem;
+        margin-right: 0rem;
+      }
+    }
+  }
+  &.opensource {
+    background: var(--line-one);
+    p {
+      margin: 0;
+      color: var(--primary-text-color);
+    }
+    a {
+      color: var(--line-four);
+    }
   }
 }
 .form-container {
