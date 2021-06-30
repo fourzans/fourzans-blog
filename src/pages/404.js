@@ -37,7 +37,8 @@ const notFound = () => {
             fill="currentColor"
           />
         </svg>
-        <p>Either you are in a wrong page or you have lost. Lets go back <Link to="/">home</Link> safely</p>
+        <p>Remeber those old 404 pages from the 90 that said something like "Something's gone wrong, but don't worry, our webmasters have been notified." But were the webmasters ever notified? I mean, were they really?</p>
+        <p>Lets go back to <Link to="/">life</Link>, back to reality</p>
       </div>
     </Layout>
   )

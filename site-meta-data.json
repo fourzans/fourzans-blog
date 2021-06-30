@@ -4,6 +4,6 @@
   "description": "Typescript, Dotnet, NodeJS, Software Blog",
   "home": {
     "title": "",
-    "description": "Hi! I'm Mariano. I enjoy writing articles about <span class='highlight'>software development</span>, mostly about <span class='highlight'>MERN</span> and <span class='highlight'>.NET</span>. In this blog I will teach you how to write <span class='highlight'>efficient</span>, <span class='highlight'>high-performance</span> software."
+    "description": "Hi! I'm Mariano. I enjoy writing articles about <span class='highlight'>MERN</span> and <span class='highlight'>.NET</span>. In this blog I will teach you how to write <span class='highlight'>efficient</span>, <span class='highlight'>high-performance</span> software."
   }
 }

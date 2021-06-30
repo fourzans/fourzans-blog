@@ -1,5 +1,8 @@
-import React from "react"
-import SiteHeader from "../components/siteHeader"
+import React from "react";
+import SiteHeader from "../components/siteHeader";
+import SiteFooter from "../components/siteFooter";
+import SiteFooterOpenSource from "../components/siteFooterOpenSource";
+
 import 'prismjs/themes/prism-okaidia.css';
 
 export default ({ children }) => {
@@ -8,10 +11,9 @@ export default ({ children }) => {
       <SiteHeader />
       <div className="site-wrapper">
           {children}
-          <footer className="site-footer">
-            <p>&copy; marianofourzans &bull; {new Date().getFullYear()} &bull; all code <a href="http://opensource.org/licenses/MIT" rel="nofollow">MIT license</a></p>
-          </footer>
       </div>
+      <SiteFooter />
+      <SiteFooterOpenSource />
     </div>
   )
 }
