@@ -28,7 +28,7 @@ export default () => {
                 </div>
                 <Navigation />
             </div>
-            <div class="retro-bars">
+            <div className="retro-bars">
                 <div className="line-one"></div>
                 <div className="line-two"></div>
                 <div className="line-three"></div>

@@ -380,6 +380,22 @@ main {
   margin-right: auto;
   margin-left: auto;
 }
+.article-title {
+  font-size: 1.5rem;
+}
+.post-list-item {
+  margin-bottom: 2rem;
+  h2 {
+    margin-bottom: 0.6rem;
+  }
+
+  .article-meta {
+    font-size: 1.25rem;
+    color: var(--theme-ui-colors-secondary,#5f6c80);
+    margin-top: 0.25rem;
+  }
+}
+
 @media (min-width: 768px) {
   main {
       max-width: 720px;
@@ -610,6 +626,9 @@ body.light {
   }
   .postTitle {
     text-align: center;
+  }
+  .articles {
+    margin-top: 5rem;
   }
 }
 div.menu {
