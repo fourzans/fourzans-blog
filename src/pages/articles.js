@@ -28,7 +28,7 @@ const ArticlesPage = ({
                 <span className="article-title" itemProp="headline">{edge.node.frontmatter.title}</span>
               </Link>
             </h2>
-            <span className="article-meta">{edge.node.frontmatter.date}</span> - <span className="article-meta">{edge.node.frontmatter.tags}</span>
+            <span className="article-meta">{edge.node.frontmatter.date}</span> - <Link className="article-meta" to={`/tags/${edge.node.frontmatter.tags}`}>{edge.node.frontmatter.tags}</Link>
           </header>
         </article>
       )
