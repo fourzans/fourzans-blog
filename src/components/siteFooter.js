@@ -9,8 +9,6 @@ export default () => {
                     <p><a href="/about">About</a></p>
                     <p><a href="/articles">Articles</a></p>
                     <p><a href="/contact">Contact</a></p>
-                    <p><a href="/portfolio">Portfolio</a></p>
-                    <p><a href="/wiki">Wiki</a></p>
                 </div>
                 <div className="web">
                     <h2>On the web</h2>
